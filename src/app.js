@@ -2,7 +2,6 @@ const path = require('path')
 const express = require('express')
 const geoCode = require('./utils/geocode')
 
-
 const app = express()
 const pathDir = path.join(__dirname, '../public')
 
