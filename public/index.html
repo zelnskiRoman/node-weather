@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+
+        <h1>WeatherApp</h1>
+        <p>Exlore your weather!</p>
+        <div class="input-group mb-3" style="max-width: 400px;">
+            <input type="text" class="form-control" placeholder="Enter your location..." id="type-text">
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="button" id="btn-search">Button</button>
+            </div>
+        </div>
+        <div class="alert alert-danger" role="alert" style="display: none;" id="error">
+            <h4 class="alert-heading">Error!</h4>
+            <p>Unable to find your location</p>
+            <hr>
+            <p class="mb-0">Check the internet connection / Check your entered location</p>
+        </div>
+        <div class="alert alert-success" role="alert" style="display: none;" id="success">
+            <h4 class="alert-heading">Your forecast for the current time!</h4>
+            <p></p>
+            <p></p>
+            <hr>
+            <p class="mb-0"></p>
+        </div>
+        <script src="./js/index.js"></script>
+</body>
+
+</html>
