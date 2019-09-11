@@ -2,6 +2,8 @@ const path = require('path')
 const express = require('express')
 const geoCode = require('./utils/geocode')
 
+const port = process.env.PORT || 3000;
+
 const app = express()
 const pathDir = path.join(__dirname, '../public')
 
@@ -39,6 +41,6 @@ app.get('*', (req, res) => {
     res.send('No page FOUND! 404')
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server start!')
 })
